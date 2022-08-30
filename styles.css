@@ -17,7 +17,7 @@ a, ul, img, h1, p{
 button {
     padding: 10px 20px 10px 20px;
     border-radius: 5px 5px 5px 5px;
-    background: linear-gradient(#2c2c2c, #d1c581);
+    background: linear-gradient(#2c2c2c, #0c0c0c);
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
 .logo {
     display: flex;
     align-items: center;
+    padding-left: 8%;
 }
 
 header {
@@ -37,9 +38,15 @@ header {
     padding: 20px 10%;
 }
 
+.links {
+    width: 100%;
+    padding-left: 40%;
+}
+
 .nav-links li {
     display: inline-block;
-    padding-left: 60px;
+    margin-right: 10%;
+    
 }
 
 .nav-links li a {
@@ -87,7 +94,7 @@ hr {
 }
 
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1210px) {
     .nav-links {
         display: none;
     }
@@ -98,17 +105,26 @@ hr {
 }
 
 
+@media only screen and (max-width: 1667px)
+   {
+    .links {
+        padding-left: 20%;
+    }
+} 
+
+
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .content-box {
-    width: 60%;
-    height: 1000px;
+    width: 80%;
+
     background-color: #272727;
     border-radius: 5px 5px 5px 5px;
 }
@@ -152,11 +168,51 @@ hr {
   }
 
 
+.scroll-container,
+.scroll-area {
+    max-width: 850px;
+    height: 500px;
+    font-size: 60px;
+}
 
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 500px;
+}
 
+.scroll-container::-webkit-scrollbar {
+    display: none;
+  }
 
+.scroll-area {
+    scroll-snap-align: start;
+}
 
+.scroll-container,
+.scroll-area {
+    margin: 0 auto;
+}
 
+.scroll-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.scroll-area:nth-of-type(1) {
+    background: blue;
+
+}
+.scroll-area:nth-of-type(2) {
+    background: yellow;
+
+}
+.scroll-area:nth-of-type(3) {
+    background: red;
+
+}
 
 
 .footer {
@@ -167,8 +223,9 @@ hr {
 
 .footer-content {
     width: 80%;
-    height: 200px;
+    height: 100px;
     background-color: #272727;
     border-radius: 5px 5px 5px 5px;
     padding-bottom: 10px;
+    
 }
