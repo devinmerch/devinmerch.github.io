@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #202020;
+    background-color: #344e41;
 }
 
 a, ul, img, h1, p{
@@ -14,10 +14,15 @@ a, ul, img, h1, p{
     list-style-type: none;
 }
 
+p {
+    font-size: 18px;
+}
+
 button {
+    border: none;
     padding: 10px 20px 10px 20px;
     border-radius: 5px 5px 5px 5px;
-    background: linear-gradient(#2c2c2c, #0c0c0c);
+    background: #588157;
 }
 
 h1 {
@@ -123,9 +128,8 @@ hr {
 }
 
 .content-box {
-    width: 80%;
-
-    background-color: #272727;
+    width: 60%;
+    background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
 }
 .selfie {
@@ -133,20 +137,21 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0%;
 }
 
 .selfie-img {
-    padding-left: 10px;
     padding-top: 10px;
-    border-radius: 50%;
-    max-width: 45%;
+    border-radius: 10%;
+    max-width: 35%;
 }
 
 .selfie-txt {
-    font-size: xx-large;
+    font-size: 200px;
     padding-left: 20px;
     padding-top: 10%;
     max-width: 100%;
+    padding-right: 1%;
 }
 
 @media (max-width: 1200px) {
@@ -156,7 +161,7 @@ hr {
     }
   }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
     .selfie {
       flex-direction: column;
     }
@@ -170,15 +175,16 @@ hr {
 
 .scroll-container,
 .scroll-area {
-    max-width: 850px;
-    height: 500px;
+    max-width: 80%;
+    height: 200px;
     font-size: 60px;
+    border-radius: 5%;
 }
 
 .scroll-container {
     overflow: auto;
     scroll-snap-type: y mandatory;
-    height: 500px;
+    max-height: 50%;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -202,17 +208,80 @@ hr {
 }
 
 .scroll-area:nth-of-type(1) {
-    background: blue;
+    
+    background: #588157;
 
 }
 .scroll-area:nth-of-type(2) {
-    background: yellow;
+    background: #a3b18a;
 
 }
 .scroll-area:nth-of-type(3) {
-    background: red;
+    background: #dad7cd;
 
 }
+
+
+.project-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+    padding-top: 2%;
+}
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+  
+  .arrows path {
+    stroke: white;
+    fill: transparent;
+    stroke-width: 2px;  
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+  }
+  
+  @keyframes arrow
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  @-webkit-keyframes arrow /*Safari and Chrome*/
+  {
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+  }
+  
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {
@@ -222,9 +291,9 @@ hr {
 }
 
 .footer-content {
-    width: 80%;
+    width: 60%;
     height: 100px;
-    background-color: #272727;
+    background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
     padding-bottom: 10px;
     
