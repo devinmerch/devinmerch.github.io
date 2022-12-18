@@ -64,7 +64,7 @@ header {
 
 hr {
     height: 1px;
-    width: 60%;
+    width: 80%;
     background-color: rgb(94,94,94);
     border: none;
 }
@@ -117,7 +117,25 @@ hr {
     }
 } 
 
+.custom-shape-divider-top-1665589530 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1665589530 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 96px;
+}
+
+.custom-shape-divider-top-1665589530 .shape-fill {
+    fill: #FFFFFF;
+}
 
 .container {
     display: flex;
@@ -137,11 +155,12 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 0%;
+    padding-bottom: 10%;
 }
 
 .selfie-img {
     padding-top: 10px;
+    padding-right: 10px;
     border-radius: 10%;
     max-width: 35%;
 }
@@ -154,10 +173,21 @@ hr {
     padding-right: 1%;
 }
 
+.learnmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
 @media (max-width: 1200px) {
     .selfie-txt {
       padding-top: 0%;
       font-size: large;
+    }
+    .learnmore {
+        font-size: large;
     }
   }
 
@@ -170,26 +200,37 @@ hr {
       font-size: large;
       text-align: center;
     }
+    .learnmore {
+        font-size: small;
+    }
   }
+
+
 
 
 .scroll-container,
 .scroll-area {
+    display: relative;
     max-width: 80%;
-    height: 200px;
+    height: 400px;
     font-size: 60px;
     border-radius: 5%;
+    max-width: 500px;
+
 }
 
 .scroll-container {
     overflow: auto;
     scroll-snap-type: y mandatory;
     max-height: 50%;
+    object-fit: cover;
 }
+
 
 .scroll-container::-webkit-scrollbar {
     display: none;
   }
+
 
 .scroll-area {
     scroll-snap-align: start;
@@ -208,10 +249,9 @@ hr {
 }
 
 .scroll-area:nth-of-type(1) {
-    
     background: #588157;
-
 }
+
 .scroll-area:nth-of-type(2) {
     background: #a3b18a;
 
@@ -221,6 +261,15 @@ hr {
 
 }
 
+#project1 {
+    cursor: pointer;
+}
+.project2_text {
+    padding: 10%;
+    background-color: black;
+    cursor: pointer;
+}
+
 
 .project-arrows {
     display: flex;
@@ -228,6 +277,7 @@ hr {
     align-items: center;
     max-height: 100px;
     padding-top: 2%;
+
 }
 .arrows {
     display: flex;
@@ -270,7 +320,14 @@ hr {
     animation-delay:-0.5s;
     -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
   }
-  
+
+
+  .skilltree {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    height: 100px;
+  }
 
 
 
@@ -280,11 +337,7 @@ hr {
 
 
 
-
-
-
-
-.footer {
+#footer {
     display: flex;
     justify-content: center;
     align-items: center;
