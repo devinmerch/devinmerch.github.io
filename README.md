@@ -1,3 +1,3 @@
 # mDevinn.github.io
 
-## My personal portfolio page.
+My personal portfolio page.
