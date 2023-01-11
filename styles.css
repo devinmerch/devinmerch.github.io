@@ -50,8 +50,7 @@ header {
 
 .nav-links li {
     display: inline-block;
-    margin-right: 10%;
-    
+    margin-right: 10%; 
 }
 
 .nav-links li a {
@@ -83,7 +82,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .burger-nav li {
@@ -98,7 +96,6 @@ hr {
     color: rgb(94, 94, 94);
 }
 
-
 @media only screen and (max-width: 1210px) {
     .nav-links {
         display: none;
@@ -106,9 +103,8 @@ hr {
     .hamburger {
         display: flex;
         cursor: pointer;
-    }
+    }  
 }
-
 
 @media only screen and (max-width: 1667px)
    {
@@ -150,6 +146,7 @@ hr {
     background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
 }
+
 .selfie {
     display: flex;
     flex-direction: row;
@@ -178,17 +175,17 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-  }
+    color: #2f3e46;
+}
 
 @media (max-width: 1200px) {
     .selfie-txt {
       padding-top: 0%;
-      font-size: large;
     }
-    .learnmore {
-        font-size: large;
+    .scroll-container {
+        width: 80%;
     }
+
   }
 
 @media (max-width: 880px) {
@@ -196,36 +193,32 @@ hr {
       flex-direction: column;
     }
     .selfie-txt {
-      padding-top: 0%;
-      font-size: large;
       text-align: center;
     }
-    .learnmore {
-        font-size: small;
+    .icons_parent {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: left;
     }
   }
-
-
-
 
 .scroll-container,
 .scroll-area {
     display: relative;
-    max-width: 80%;
-    height: 400px;
+    max-width: 100%;
+    height: 500px;
+    max-height: 800px;
     font-size: 60px;
     border-radius: 5%;
-    max-width: 500px;
-
+    max-width: 800px;
 }
 
 .scroll-container {
     overflow: auto;
     scroll-snap-type: y mandatory;
-    max-height: 50%;
+    max-height: 80%;
     object-fit: cover;
 }
-
 
 .scroll-container::-webkit-scrollbar {
     display: none;
@@ -254,22 +247,32 @@ hr {
 
 .scroll-area:nth-of-type(2) {
     background: #a3b18a;
-
 }
 .scroll-area:nth-of-type(3) {
     background: #dad7cd;
-
 }
 
 #project1 {
     cursor: pointer;
 }
+
 .project2_text {
-    padding: 10%;
+    padding: 5%;
     background-color: black;
     cursor: pointer;
+
 }
 
+.icons_parent {
+    padding-top: 5%;
+}
+
+.icons {
+ display: flex;
+ justify-content: space-evenly;
+ align-items: left;
+ cursor: pointer;
+}
 
 .project-arrows {
     display: flex;
@@ -287,7 +290,7 @@ hr {
     width: 40px;
 }
   
-  .arrows path {
+.arrows path {
     stroke: white;
     fill: transparent;
     stroke-width: 2px;  
@@ -295,7 +298,7 @@ hr {
     -webkit-animation: arrow 2s infinite; 
   }
   
-  @keyframes arrow
+@keyframes arrow
   {
   0% {opacity:0}
   40% {opacity:1}
@@ -303,7 +306,7 @@ hr {
   100% {opacity:0}
   }
   
-  @-webkit-keyframes arrow /*Safari and Chrome*/
+@-webkit-keyframes arrow /*Safari and Chrome*/
   {
   0% {opacity:0}
   40% {opacity:1}
@@ -311,31 +314,76 @@ hr {
   100% {opacity:0}
   }
   
-  .arrows path.a1 {
+.arrows path.a1 {
     animation-delay:-1s;
     -webkit-animation-delay:-1s; /* Safari 和 Chrome */
   }
   
-  .arrows path.a2 {
+.arrows path.a2 {
     animation-delay:-0.5s;
     -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
   }
 
 
-  .skilltree {
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
+.skills_text {
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+
+.skill_item {
+    width: 200px;
     height: 100px;
+    background-color: #a3b18a;
+    margin: 5px;
+    border-radius: 5%;
+}
+
+.top_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+small {
+    color: #333f46;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.progress {
+    margin:20px auto;
+    padding:0;
+    width:90%;
+    height:20px;
+    overflow:hidden;
+    background:#b9b9b9;
+    border-radius:6px;
   }
-
-
-
-
-
-
-
-
+  
+  .bar {
+    position:relative;
+    float:left;
+    height:100%;
+  }
 
 #footer {
     display: flex;
@@ -349,5 +397,4 @@ hr {
     background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
     padding-bottom: 10px;
-    
 }
