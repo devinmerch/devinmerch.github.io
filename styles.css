@@ -142,7 +142,7 @@ hr {
 }
 
 .content-box {
-    width: 60%;
+    width: 80%;
     background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
 }
@@ -210,13 +210,13 @@ hr {
     max-height: 800px;
     font-size: 60px;
     border-radius: 5%;
-    max-width: 800px;
 }
 
 .scroll-container {
     overflow: auto;
     scroll-snap-type: y mandatory;
     max-height: 80%;
+    max-width: 80%;
     object-fit: cover;
 }
 
@@ -392,7 +392,7 @@ small {
 }
 
 .footer-content {
-    width: 60%;
+    width:80%;
     height: 100px;
     background-color: #3a5a40;
     border-radius: 5px 5px 5px 5px;
