@@ -205,6 +205,7 @@ hr {
     .learnmore {
         margin: 10px;
     }
+    
   }
 
 .scroll-container,
@@ -220,14 +221,12 @@ hr {
     .scroll-container,
     .scroll-area {
         display: relative;
-        max-width: 100%;
+        max-width: 80%;
         height: 700px;
         font-size: 60px;
         border-radius: 5%;
     }
   }
-
-
 
 .scroll-container {
     overflow: auto;
@@ -422,6 +421,11 @@ small {
 
 .icons img:hover {
     filter: opacity(0.3) drop-shadow(0 0 0 gray);
+}
+
+.ions img {
+    width: 100px;
+    height: 100px;
 }
 
 
