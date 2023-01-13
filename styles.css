@@ -171,7 +171,7 @@ hr {
     padding-left: 20px;
     padding-top: 10%;
     max-width: 100%;
-    padding-right: 1%;
+    padding-right: 5%;
 }
 
 .learnmore {
@@ -194,14 +194,16 @@ hr {
 @media (max-width: 880px) {
     .selfie {
       flex-direction: column;
+      padding-left: 10px;
     }
     .selfie-txt {
       text-align: center;
     }
-    .icons_parent {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: left;
+    #selfie {
+        padding-left: 20px;
+    }
+    .learnmore {
+        margin: 10px;
     }
   }
 
@@ -225,7 +227,7 @@ hr {
     }
   }
 
-  
+
 
 .scroll-container {
     overflow: auto;
@@ -263,7 +265,7 @@ hr {
     background: #a3b18a;
 }
 .scroll-area:nth-of-type(3) {
-    background: #dad7cd;
+    background: #d4cbac;
 }
 
 #project1 {
@@ -394,11 +396,11 @@ small {
     border-radius:6px;
   }
   
-  .bar {
+.bar {
     position:relative;
     float:left;
     height:100%;
-  }
+}
 
 #footer {
     display: flex;
@@ -413,7 +415,6 @@ small {
     border-radius: 5px 5px 5px 5px;
     padding-bottom: 10px;
 }
-
 
 .icons img {
     transition: all 0.5s ease 0s;
