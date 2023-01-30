@@ -154,16 +154,18 @@ hr {
 #selfie {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 10%;
 }
 
 .selfie-img {
-    padding-top: 10px;
-    padding-right: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
     border-radius: 10%;
+    min-width: 150px;
     max-width: 35%;
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
 .selfie-txt {
